@@ -10,7 +10,7 @@ openai.api_key = "SUA_API_KEY"
 recognizer = sr.Recognizer()
 model = whisper.load_model("base")
 
-def ouvir():
+def capturar_audio():
     with sr.Microphone() as source:
         print("Fale algo...")
         audio = recognizer.listen(source)
